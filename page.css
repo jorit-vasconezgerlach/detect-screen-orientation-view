@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CA3216;
+}
+@media (orientation: portrait) {
+    body {
+        background: black;
+    }
+    h2::before {
+        content: "Portrait";
+    }
+}
+@media (orientation: landscape) {
+    body {
+        background: white;
+    }
+    h2::before {
+        content: "Landscape";
+    }
+}
